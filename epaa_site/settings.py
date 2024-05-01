@@ -23,7 +23,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
-    "blog.apps.BlogConfig",
+    "fashionflow.apps.fashionflowConfig",
     "accounts.apps.AccountsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -47,7 +47,7 @@ MIDDLEWARE = [
     "django.middleware.gzip.GZipMiddleware",
 ]
 
-ROOT_URLCONF = "djangoblog.urls"
+ROOT_URLCONF = "epaa_site.urls"
 
 TEMPLATES = [
     {

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
 
-from blog.models import Category, Comment, Newsletter, Post
+from fashionflow.models import Category, Comment, Newsletter, Post
 
 admin.site.register(Post)
 admin.site.register(Category)

@@ -2,7 +2,7 @@
 =========================================
 =========================================
 
-Bootstrap Temple Blog Template
+Bootstrap Temple fashionflow Template
 
 =========================================
 ========================================= */
@@ -1313,62 +1313,62 @@ main.posts-listing .post-footer {
   border-color: #2b90d9;
 }
 
-.blog-post {
+.fashionflow-post {
   padding-left: 0;
   padding-right: 0;
 }
 
-.blog-post .post-footer {
+.fashionflow-post .post-footer {
   font-size: 0.8em;
 }
 
-.blog-post .post-thumbnail img {
+.fashionflow-post .post-thumbnail img {
   width: 100%;
   margin-bottom: 10px;
 }
 
-.blog-post h1 {
+.fashionflow-post h1 {
   color: #444;
   line-height: 1.1em;
 }
 
-.blog-post h1:hover {
+.fashionflow-post h1:hover {
   color: #444;
 }
 
-.blog-post .post-footer {
+.fashionflow-post .post-footer {
   margin-top: 20px;
 }
 
-.blog-post .post-body {
+.fashionflow-post .post-body {
   margin-top: 40px;
 }
 
-.blog-post .post-body h2,
-.blog-post .post-body h3,
-.blog-post .post-body h4,
-.blog-post .post-body h5,
-.blog-post .post-body h6 {
+.fashionflow-post .post-body h2,
+.fashionflow-post .post-body h3,
+.fashionflow-post .post-body h4,
+.fashionflow-post .post-body h5,
+.fashionflow-post .post-body h6 {
   color: #333;
 }
 
-.blog-post .post-body p {
+.fashionflow-post .post-body p {
   margin-bottom: 30px;
 }
 
-.blog-post .post-body p:not(.lead) {
+.fashionflow-post .post-body p:not(.lead) {
   font-size: 1em;
   line-height: 1.7em;
   color: #555;
 }
 
-.blog-post .posts-nav {
+.fashionflow-post .posts-nav {
   margin-top: 50px;
   color: #777;
   font-size: 0.8em;
 }
 
-.blog-post .posts-nav a {
+.fashionflow-post .posts-nav a {
   color: inherit;
   width: calc(50% - 10px);
   padding: 10px 20px;
@@ -1376,17 +1376,17 @@ main.posts-listing .post-footer {
   margin-bottom: 15px;
 }
 
-.blog-post .posts-nav a:hover {
+.fashionflow-post .posts-nav a:hover {
   border-color: #2b90d9;
 }
 
-.blog-post .posts-nav a:hover .icon {
+.fashionflow-post .posts-nav a:hover .icon {
   background: #2b90d9;
   color: #fff;
   border-color: #2b90d9;
 }
 
-.blog-post .icon {
+.fashionflow-post .icon {
   min-width: 35px;
   max-width: 35px;
   height: 35px;
@@ -1400,62 +1400,62 @@ main.posts-listing .post-footer {
   transition: all 0.2s;
 }
 
-.blog-post .icon.prev {
+.fashionflow-post .icon.prev {
   margin-right: 20px;
 }
 
-.blog-post .icon.next {
+.fashionflow-post .icon.next {
   margin-left: 20px;
 }
 
-.blog-post .post-comments {
+.fashionflow-post .post-comments {
   margin-top: 50px;
 }
 
-.blog-post .post-comments span.no-of-comments {
+.fashionflow-post .post-comments span.no-of-comments {
   color: #777;
   font-size: 0.8em;
   margin-left: 5px;
   font-weight: 400;
 }
 
-.blog-post .post-comments header {
+.fashionflow-post .post-comments header {
   margin-bottom: 40px;
 }
 
-.blog-post .post-comments .comment:last-of-type .comment-body {
+.fashionflow-post .post-comments .comment:last-of-type .comment-body {
   border-bottom: none;
 }
 
-.blog-post .post-comments .image {
+.fashionflow-post .post-comments .image {
   margin-right: 15px;
 }
 
-.blog-post .post-comments .title::after {
+.fashionflow-post .post-comments .title::after {
   display: none;
 }
 
-.blog-post .post-comments img {
+.fashionflow-post .post-comments img {
   max-width: 40px;
   min-width: 40px;
   height: 40px;
 }
 
-.blog-post .post-comments strong {
+.fashionflow-post .post-comments strong {
   display: block;
   color: #555;
 }
 
-.blog-post .post-comments span.date {
+.fashionflow-post .post-comments span.date {
   font-size: 0.8em;
   color: #999;
 }
 
-.blog-post .post-comments span.date::after {
+.fashionflow-post .post-comments span.date::after {
   display: none;
 }
 
-.blog-post .post-comments .comment-body {
+.fashionflow-post .post-comments .comment-body {
   margin-left: 55px;
   margin-top: 10px;
   margin-bottom: 25px;
@@ -1463,21 +1463,21 @@ main.posts-listing .post-footer {
   border-bottom: 1px solid #eee;
 }
 
-.blog-post .post-comments p {
+.fashionflow-post .post-comments p {
   font-size: 0.95em;
   color: #555;
 }
 
-.blog-post .add-comment {
+.fashionflow-post .add-comment {
   margin-top: 50px;
 }
 
-.blog-post .add-comment header {
+.fashionflow-post .add-comment header {
   margin-bottom: 30px;
 }
 
-.blog-post .add-comment input,
-.blog-post .add-comment textarea {
+.fashionflow-post .add-comment input,
+.fashionflow-post .add-comment textarea {
   background: none;
   border: none;
   border-bottom: 1px solid #ddd;
@@ -1486,8 +1486,8 @@ main.posts-listing .post-footer {
   font-family: "Open Sans", sans-serif;
 }
 
-.blog-post .add-comment input::-moz-placeholder,
-.blog-post .add-comment textarea::-moz-placeholder {
+.fashionflow-post .add-comment input::-moz-placeholder,
+.fashionflow-post .add-comment textarea::-moz-placeholder {
   font-weight: 400;
   font-size: 0.9em;
   color: #aaa;
@@ -1495,8 +1495,8 @@ main.posts-listing .post-footer {
   font-family: "Open Sans", sans-serif;
 }
 
-.blog-post .add-comment input::-webkit-input-placeholder,
-.blog-post .add-comment textarea::-webkit-input-placeholder {
+.fashionflow-post .add-comment input::-webkit-input-placeholder,
+.fashionflowpost .add-comment textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 0.9em;
   color: #aaa;
@@ -1504,8 +1504,8 @@ main.posts-listing .post-footer {
   font-family: "Open Sans", sans-serif;
 }
 
-.blog-post .add-comment input:-ms-input-placeholder,
-.blog-post .add-comment textarea:-ms-input-placeholder {
+.fashionflow-post .add-comment input:-ms-input-placeholder,
+.fashionflow-post .add-comment textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 0.9em;
   color: #aaa;
@@ -1513,14 +1513,14 @@ main.posts-listing .post-footer {
   font-family: "Open Sans", sans-serif;
 }
 
-.blog-post .add-comment input:focus,
-.blog-post .add-comment textarea:focus {
+.fashionflow-post .add-comment input:focus,
+.fashionflow-post .add-comment textarea:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-bottom: 1px solid #2b90d9;
 }
 
-.blog-post .add-comment textarea {
+.fashionflow-post .add-comment textarea {
   min-height: 150px;
 }
 
@@ -1547,10 +1547,10 @@ blockquote.blockquote p {
 }
 
 @media (max-width: 575px) {
-  .blog-post .title::after {
+  .fashionflow-post .title::after {
     display: none !important;
   }
-  .blog-post .author {
+  .fashionflow-post .author {
     margin-bottom: 10px;
   }
 }

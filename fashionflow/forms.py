@@ -2,7 +2,7 @@
 from django import forms
 from tinymce.widgets import TinyMCE
 
-from blog.models import Comment, Post
+from fashionflow.models import Comment, Post
 
 
 class PostForm(forms.ModelForm):

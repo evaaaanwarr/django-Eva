@@ -2,7 +2,7 @@
 from django.contrib.auth.decorators import login_required
 from django.urls import path
 
-from blog import views
+from fashionflow import views
 
 urlpatterns = [
     path("", views.IndexView.as_view(), name="index"),
