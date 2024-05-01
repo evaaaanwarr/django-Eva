@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="all,follow" />
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="{% static 'fashionflow/vendor/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendor/bootstrap/css/bootstrap.min.css' %}" />
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="{% static 'fashionflow/vendor/font-awesome/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendor/font-awesome/css/font-awesome.min.css' %}" />
     <!-- Custom icon font-->
-    <link rel="stylesheet" href="{% static 'fashionflow/css/fontastic.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/css/fontastic.css' %}" />
     <!-- Google fonts - Open Sans-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" />
     <!-- Fancybox-->
-    <link rel="stylesheet" href="{% static 'fashionflow/vendor/@fancyapps/fancybox/jquery.fancybox.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/vendor/@fancyapps/fancybox/jquery.fancybox.min.css' %}" />
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="{% static 'fashionflow/css/style.sea.css' %}" id="theme-stylesheet" />
+    <link rel="stylesheet" href="{% static 'blog/css/style.sea.css' %}" id="theme-stylesheet" />
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="{% static 'fashionflow/css/custom.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png" />
     <!-- Tweaks for older IEs-->
@@ -30,7 +30,7 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
 		><![endif]-->
 
-    <title>{% block title %} fashionflow {% endblock title %}</title>
+    <title>{% block title %} Fantastic Django Blog {% endblock title %}</title>
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             <div class="container">
                 <!-- Navbar Brand -->
                 <div class="navbar-header d-flex align-items-center justify-content-between">
-                    <!-- Navbar Brand --><a href="{% url 'index' %}" class="navbar-brand">fashionflow</a>
+                    <!-- Navbar Brand --><a href="{% url 'index' %}" class="navbar-brand">Eva Amalia Anwar</a>
                     <!-- Toggle Button-->
                     <button type="button" data-toggle="collapse" data-target="#navbarcollapse"
                         aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation"
@@ -67,7 +67,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a href="{% url 'index' %}" class="nav-link active ">Home</a>
                         </li>
-                        <li class="nav-item"><a href="{% url 'post_list' %}" class="nav-link ">fashionflow</a>
+                        <li class="nav-item"><a href="{% url 'post_list' %}" class="nav-link ">Blog</a>
                         </li>
                         <li class="nav-item"><a href="{% url 'post_create' %}" class="nav-link ">Create Post</a>
                         </li>
@@ -94,7 +94,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="logo">
-                        <h6 class="text-white">fashionflow</h6>
+                        <h6 class="text-white">Fantastic Django Blog</h6>
                     </div>
                     <div class="contact-details">
                         <p>53 Broadway, Broklyn, NY 11249</p>
@@ -131,7 +131,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; {% now 'Y' %} All rights reserved. fashionflow</p>
+                        <p>&copy; {% now 'Y' %} All rights reserved. Fantastic Django Blog</p>
                     </div>
                 </div>
             </div>
@@ -140,12 +140,12 @@
 
 
     <!-- JavaScript files-->
-    <script src="{% static 'fashionflow/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'fashionflow/vendor/popper.js/umd/popper.min.js' %}"> </script>
-    <script src="{% static 'fashionflow/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'fashionflow/vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
-    <script src="{% static 'fashionflow/vendor/@fancyapps/fancybox/jquery.fancybox.min.js' %}"></script>
-    <script src="{% static 'fashionflow/js/front.js' %}"></script>
+    <script src="{% static 'blog/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'blog/vendor/popper.js/umd/popper.min.js' %}"> </script>
+    <script src="{% static 'blog/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'blog/vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
+    <script src="{% static 'blog/vendor/@fancyapps/fancybox/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'blog/js/front.js' %}"></script>
     {% block javascript %}{% endblock javascript %}
 </body>
 

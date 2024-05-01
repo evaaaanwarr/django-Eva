@@ -5,7 +5,7 @@ from django.views.generic import CreateView, View
 
 from accounts.forms import AuthorForm, UserForm, UserUpdateForm
 from accounts.models import Author
-from blog.models import Newsletter
+from fashionflow.models import Newsletter
 
 
 class AuthorCreateView(CreateView):

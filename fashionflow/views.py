@@ -22,7 +22,7 @@ class IndexView(View):
         featured_posts = Post.objects.filter(featured=True)[0:3]
         latest_posts = Post.objects.order_by("-timestamp")[0:3]
         context = {"featured_posts": featured_posts, "latest_posts": latest_posts}
-        return render(request, "fashionflow/index.html", context=context)
+        return render(request, "blog/index.html", context=context)
 
     def post(self, request, *args, **kwargs):
         email = request.POST.get("email")
@@ -36,7 +36,7 @@ class IndexView(View):
 class PostDetailView(DetailView):
 
     model = Post
-    template_name = "fashionflow/post_detail.html"
+    template_name = "blog/post_detail.html"
     _comment_form = CommentForm()
 
     def get_context_data(self, **kwargs):
@@ -59,7 +59,7 @@ class PostDetailView(DetailView):
 class PostListView(ListView):
 
     model = Post
-    template_name = "fashionflow/post_list.html"
+    template_name = "blog/post_list.html"
     paginate_by = 4
 
     def get_context_data(self, **kwargs):
@@ -76,12 +76,12 @@ class SearchView(View):
             Q(title__icontains=q) | Q(overview__icontains=q)
         ).all()
         context = {"search_result": search_result}
-        return render(request, "fashionflow/search.html", context=context)
+        return render(request, "blog/search.html", context=context)
 
 
 class PostCreateView(CreateView):
     model = Post
-    template_name = "fashionflow/post_create.html"
+    template_name = "blog/post_create.html"
     form_class = PostForm
 
     def form_valid(self, form):
@@ -92,7 +92,7 @@ class PostCreateView(CreateView):
 
 class PostUpdateView(UpdateView):
     model = Post
-    template_name = "fashionflow/post_update.html"
+    template_name = "blog/post_update.html"
     form_class = PostForm
 
     def form_valid(self, form):
@@ -103,5 +103,5 @@ class PostUpdateView(UpdateView):
 
 class PostDeleteView(DeleteView):
     model = Post
-    template_name = "fashionflow/post_delete.html"
+    template_name = "blog/post_delete.html"
     success_url = reverse_lazy("index")

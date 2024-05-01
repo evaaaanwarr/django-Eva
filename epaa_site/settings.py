@@ -23,7 +23,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
-    "fashionflow.apps.fashionflowConfig",
+    "fashionflow.apps.FashionflowConfig",
     "accounts.apps.AccountsConfig",
     "django.contrib.admin",
     "django.contrib.auth",

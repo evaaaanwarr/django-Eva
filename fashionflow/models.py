@@ -14,7 +14,7 @@ from accounts.models import Author
 
 class Category(models.Model):
 
-    title = models.CharField(_("Title"), max_length=50)
+    title = models.CharField(_("Title"), max_length=50, default="")
 
     class Meta:
         verbose_name = _("Category")
