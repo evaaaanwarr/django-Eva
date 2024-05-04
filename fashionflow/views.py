@@ -13,17 +13,17 @@ def category(request):
     categories = Category.objects.all()
     return render(request, 'category.html', {'categories': categories})
 
-def post_list(request):
+def blog(request):
     posts = Blog.objects.filter(status=1)
-    return render(request, 'post_list.html', {'posts': posts})
+    return render(request, 'blog.html', {'posts': posts})
 
-def page_list(request):
+def about(request):
     pages = Page.objects.filter(is_published=True)
-    return render(request, 'page_list.html', {'pages': pages})
+    return render(request, 'about.html', {'pages': pages})
 
-def blog(request, slug):
+def contact(request, slug):
     post = get_object_or_404(Blog, slug=slug, status=1)
-    return render(request, 'blog.html', {'post': post})
+    return render(request, 'contact.html', {'post': post})
 
 def page_detail(request, slug):
     page = get_object_or_404(Page, slug=slug, is_published=True)
