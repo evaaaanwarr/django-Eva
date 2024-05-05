@@ -31,6 +31,9 @@ def fashiontrends(request):
 def hijabstyle(request):
     return render(request, 'hijabstyle.html')
 
+def makeuptrends(request):
+    return render(request, 'makeuptrends.html')
+
 def page_detail(request, slug):
     page = get_object_or_404(Page, slug=slug, is_published=True)
     return render(request, 'page_detail.html', {'page': page})
