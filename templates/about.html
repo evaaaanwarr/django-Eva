@@ -1,18 +1,163 @@
-<!-- templates/blog/page_list.html -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page List</title>
+    <title>FashionFlow</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: #fff; 
+            color: #333; 
+        }
+        /* Navigation Bar */
+        .nav.navbar {
+            background-color: #ffcccc; 
+            border-radius: 10px; 
+        }
+        nav.navbar .navbar-brand,
+        nav.navbar .navbar-nav .nav-link {
+            color: #333; 
+        }
+        .nav.navbar .navbar-toggler-icon {
+            background-color: #333; 
+        }
+        /* Header */
+        header {
+            background-color: #ffcccc; 
+            color: #333; 
+            padding: 30px 0; 
+        }
+        header h1 {
+            font-size: 3rem; /* Mengurangi ukuran font h1 */
+            font-weight: bold;
+            color: #333; /* Dark Gray */
+        }
+        header p {
+            font-size: 1.25rem; /* Mengurangi ukuran font paragraf */
+            color: #555; 
+        }
+        /* Featured Trend Carousel */
+        /* Your existing CSS styles */
+    </style>
 </head>
+
 <body>
-    <h1>Page List</h1>
-    <ul>
-        {% for page in pages %}
-            <li><a href="{% url 'page_detail' page.slug %}">{{ page.title }}</a></li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">FASHIONFLOW</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/blog/">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/category/">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, lorem vel euismod
+                        fermentum, mauris nunc aliquet massa, ac finibus lacus lacus ac arcu. Duis nec augue sit amet
+                        felis volutpat lobortis.</p>
+                    <p>Nullam a est eget ante pretium convallis. Quisque convallis purus vel convallis feugiat. Nunc
+                        at elit sed urna tempor ornare. Mauris ut velit id mauris eleifend tristique.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/400" class="img-fluid" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Our Team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/150" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                            <h3>John Doe</h3>
+                            <p>Co-founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/150" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                            <h3>Jane Smith</h3>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/150" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                            <h3>Emily Johnson</h3>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+           <!-- Footer -->
+<footer class="footer bg-light text-dark text-center py-5">
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Connect with Us</h3>
+                <p>Follow us on social media for the latest updates and fashion trends.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/andy.evha"><i class="fab fa-facebook-f" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                    <a href="https://www.tiktok.com/@9.26103?_t=8m5Zva6zBXc&_r=1"><i class="fab fa-tiktok" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                    <a href="https://www.instagram.com/evaaaaanwr?igsh=dXQwbzJxaWFxcnk4"><i class="fab fa-instagram" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <p>Email: evaaanwarrr@gmail.com</p>
+                <p>Phone: +62 85349905538</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+      <!-- Bootstrap JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  
+  </html>
+  

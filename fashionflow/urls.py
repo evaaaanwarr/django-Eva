@@ -8,6 +8,7 @@ urlpatterns = [
     path('categories/', views.category, name='category'),
     path('blog/', views.blog, name='blog'),
     path('about/', views.about, name='about'),
-    path('contact/<slug:slug>/', views.contact, name='contact'),  # Changed from 'post' to 'blog'
+    path('contact/<slug:slug>/', views.contact, name='contact'),
+    path('artikel1/', views.artikel1, name='artikel1'),
     path('page/<slug:slug>/', views.page_detail, name='page_detail'),
 ]

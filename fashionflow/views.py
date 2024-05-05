@@ -25,6 +25,9 @@ def contact(request, slug):
     post = get_object_or_404(Blog, slug=slug, status=1)
     return render(request, 'contact.html', {'post': post})
 
+def artikel1(request):
+    return render(request, 'artikel1.html')
+
 def page_detail(request, slug):
     page = get_object_or_404(Page, slug=slug, is_published=True)
     return render(request, 'page_detail.html', {'page': page})
