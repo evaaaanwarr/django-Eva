@@ -25,22 +25,79 @@
         .nav.navbar .navbar-toggler-icon {
             background-color: #333; 
         }
+        .navbar-nav .nav-link {
+            position: relative;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; /* Jarak garis bawah dari teks */
+            left: 0;
+            width: 0; /* Awalnya lebar 0 */
+            height: 2px; /* Ukuran garis bawah */
+            background-color: transparent; /* Warna awal garis bawah */
+            transition: width 0.3s ease; /* Efek transisi */
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link:focus::after,
+        .navbar-nav .nav-link:active::after {
+            width: 100%; /* Ubah lebar menjadi 100% ketika dihover/diklik */
+            background-color: #333; /* Warna garis bawah saat dihover/diklik */
+        }
         /* Header */
         header {
-            background-color: #ffcccc; 
+            background-color: #ffc3c3; 
             color: #333; 
             padding: 30px 0; 
         }
         header h1 {
-            font-size: 3rem; /* Mengurangi ukuran font h1 */
+            font-size: 3rem; /* Decrease the font size of h1 */
             font-weight: bold;
             color: #333; /* Dark Gray */
         }
         header p {
-            font-size: 1.25rem; /* Mengurangi ukuran font paragraf */
+            font-size: 1.25rem; /* Decrease the font size of paragraphs */
             color: #555; 
         }
-       
+        /* Featured Trend Carousel */
+        #featured-trends {
+            background-color: #f7a1a1; 
+            color: #333; 
+            padding: 150px;
+        }
+        .carousel-caption.d-none.d-md-block {
+            /* Adjust layout and appearance properties */
+            color: #a53535; 
+        }
+
+        /* Latest Inspirations */
+        #latest-inspirations {
+            background-color: #f5f5f5; 
+            color: #333; 
+        }
+        /* Shop the Look */
+        #shop-the-look {
+            background-color: #e49090; 
+            color: #333; 
+        }
+        /* Footer */
+        #footer {
+            background-color: #E47B61; 
+            color: #fff; 
+            padding: 40px 0;
+        }
+        
+        #footer .social-icons {
+            font-size: 30px;
+        }
+        #footer .social-icons a {
+            color: #fff; 
+            margin-right: 35px;
+            transition: all 0.3s ease-in-out;
+        }
+        #footer .social-icons a:hover {
+            color: #333; 
+        }
     </style>
 </head>
 
@@ -69,12 +126,15 @@
                         <a class="nav-link" href="/category/">Category</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
+                        <a class="nav-link" href="/contact/">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>    
+</body>
+
+</html>
 
     <!-- Blog Section -->
     <section id="blog" class="py-5">
@@ -108,8 +168,8 @@
                         <img src="https://lh3.googleusercontent.com/-2JMxlpF2V10/ZjdPdzbbi0I/AAAAAAAAAHM/59huiyhOqrkJnfaPFnBbwdv1-GfXVbeFgCNcBGAsYHQ/h1600/10.png" class="card-img-top" alt="Blog Post Image 3">
                         <div class="card-body">
                             <h5 class="card-title">Makeup Trends of the Season</h5>
-                            <p class="card-text">Fusce volutpat ultrices nisl eget fringilla. Vivamus eget nulla
-                                viverra, feugiat metus nec, pharetra lectus.</p>
+                            <p class="card-text">Tren makeup musim ini menyoroti kilauan alami, bibir berwarna cerah, dan eyeshadow berwarna-warni. 
+                                Eyeliner grafis dan alis tebal juga sedang populer, sementara tampilan "glass skin" menjadi favorit. </p>
                             <a href="/makeuptrends/" class="btn btn-primary">Read More</a>
                         </div>
                     </div>

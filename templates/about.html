@@ -25,6 +25,25 @@
         .nav.navbar .navbar-toggler-icon {
             background-color: #333; 
         }
+        .navbar-nav .nav-link {
+            position: relative;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; /* Jarak garis bawah dari teks */
+            left: 0;
+            width: 0; /* Awalnya lebar 0 */
+            height: 2px; /* Ukuran garis bawah */
+            background-color: transparent; /* Warna awal garis bawah */
+            transition: width 0.3s ease; /* Efek transisi */
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link:focus::after,
+        .navbar-nav .nav-link:active::after {
+            width: 100%; /* Ubah lebar menjadi 100% ketika dihover/diklik */
+            background-color: #333; /* Warna garis bawah saat dihover/diklik */
+        }
         /* Header */
         header {
             background-color: #ffcccc; 
@@ -40,6 +59,12 @@
             font-size: 1.25rem; /* Mengurangi ukuran font paragraf */
             color: #555; 
         }
+        .team-img {
+            width: 150px; /* Sesuaikan dengan ukuran yang diinginkan */
+            height: 150px; /* Sesuaikan dengan ukuran yang diinginkan */
+            object-fit: cover;
+        }
+        
         /* Featured Trend Carousel */
         /* Your existing CSS styles */
     </style>
@@ -58,7 +83,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto" style="font-size: 16px;">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/#/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog/">Blog</a>
@@ -83,14 +108,17 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>Our Story</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, lorem vel euismod
-                        fermentum, mauris nunc aliquet massa, ac finibus lacus lacus ac arcu. Duis nec augue sit amet
-                        felis volutpat lobortis.</p>
-                    <p>Nullam a est eget ante pretium convallis. Quisque convallis purus vel convallis feugiat. Nunc
-                        at elit sed urna tempor ornare. Mauris ut velit id mauris eleifend tristique.</p>
+                    <p>Fashion Flow adalah platform fashion online yang menyajikan koleksi tren terbaru, inspirasi penampilan, 
+                        dan fitur pembelian untuk memenuhi kebutuhan pecinta mode dalam mengikuti tren terkini. Dengan kumpulan 
+                        tren yang selalu diperbarui, pengguna bisa tetap update dengan gaya terbaru. Di samping itu, Fashion Flow 
+                        juga punya galeri foto gaya street terbaru dan tips-tips kreatif dalam berbusana. </p>
+                    <p>Fitur pembelian yang terhubung dengan toko online ternama juga memudahkan pengguna untuk mendapatkan produk 
+                        yang mereka inginkan. Tak hanya itu, terdapat juga konten menarik seperti artikel mode dan wawancara dengan 
+                        desainer untuk memberikan wawasan lebih dalam tentang dunia fashion. Dengan layanan yang lengkap ini, Fashion 
+                        Flow menjadi tempat yang pas bagi mereka yang ingin tampil bergaya dengan percaya diri dan tetap mengikuti tren terkini.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="https://via.placeholder.com/400" class="img-fluid" alt="About Us">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhljHIPQ5TyfSiEqT-LuS_4HMq2WV-R74nJwH4UJruWJD-HjnKFIUuT3mzIygue2mYSk4cXKOy_siwuLQhSzMz2fxt2uokmqe_lT3pcg3Qd8G4dnUFYKUZFJHN7qVT7rFGJK2VZYzMaWXFerhUV0hDUT7lL9i5aDh3J26-7N8Y7qNBqEb3Z491lCzBHcf0/s1600/Black%20Green%20Modern%20Bold%20Greenery%20Logo%20(1).png" class="img-fluid" alt="About Us"style="height: 360px; width: auto;">
                 </div>
             </div>
         </div>
@@ -104,8 +132,8 @@
                 <div class="col-md-4">
                     <div class="card text-center">
                         <div class="card-body">
-                            <img src="https://via.placeholder.com/150" alt="Team Member" class="img-fluid rounded-circle mb-3">
-                            <h3>John Doe</h3>
+                            <img src="https://lh3.googleusercontent.com/-d9dxbyawqGU/ZjeAkDRZ2nI/AAAAAAAAAIc/GqQRkJsjXzQMhAt-ajpoqH34ZTs2Py1rACNcBGAsYHQ/h1200/WhatsApp%2BImage%2B2024-05-05%2Bat%2B20.49.55_e3be78b2.jpg" alt="Team Member" class="rounded-circle mb-3 team-img">
+                            <h3>Eva Amalia Anwar</h3>
                             <p>Co-founder</p>
                         </div>
                     </div>
@@ -113,8 +141,8 @@
                 <div class="col-md-4">
                     <div class="card text-center">
                         <div class="card-body">
-                            <img src="https://via.placeholder.com/150" alt="Team Member" class="img-fluid rounded-circle mb-3">
-                            <h3>Jane Smith</h3>
+                            <img src="https://lh3.googleusercontent.com/-unm-Ba7WDOc/ZjdqkRLUftI/AAAAAAAAAIE/g1aWFuJXCig6lfTLr3YWFwhmGl0W9JDWgCNcBGAsYHQ/h2000/WhatsApp%2BImage%2B2024-05-05%2Bat%2B17.45.19_31ee1993.jpg" alt="Team Member" class="rounded-circle mb-3 team-img">
+                            <h3>Ameliah Utary</h3>
                             <p>Designer</p>
                         </div>
                     </div>
@@ -122,8 +150,8 @@
                 <div class="col-md-4">
                     <div class="card text-center">
                         <div class="card-body">
-                            <img src="https://via.placeholder.com/150" alt="Team Member" class="img-fluid rounded-circle mb-3">
-                            <h3>Emily Johnson</h3>
+                            <img src="https://lh3.googleusercontent.com/-dCFNZ70zupc/ZjdqkSOctVI/AAAAAAAAAII/v_ZAQL_T5oIKggeULHtwP7RVTjNQIpw4wCNcBGAsYHQ/h1200/WhatsApp%2BImage%2B2024-05-05%2Bat%2B19.05.43_db75cb27.jpg" alt="Team Member" class="rounded-circle mb-3 team-img">
+                            <h3>Afni Kaulan Sadida</h3>
                             <p>Marketing Manager</p>
                         </div>
                     </div>
@@ -132,33 +160,31 @@
         </div>
     </section>
 
-           <!-- Footer -->
-<footer class="footer bg-light text-dark text-center py-5">
-    <div class="footer-container">
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Connect with Us</h3>
-                <p>Follow us on social media for the latest updates and fashion trends.</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/andy.evha"><i class="fab fa-facebook-f" style="width: 50px; height: 50px; size: 45px;"></i></a>
-                    <a href="https://www.tiktok.com/@9.26103?_t=8m5Zva6zBXc&_r=1"><i class="fab fa-tiktok" style="width: 50px; height: 50px; size: 45px;"></i></a>
-                    <a href="https://www.instagram.com/evaaaaanwr?igsh=dXQwbzJxaWFxcnk4"><i class="fab fa-instagram" style="width: 50px; height: 50px; size: 45px;"></i></a>
+    <!-- Footer -->
+    <footer class="footer bg-light text-dark text-center py-5">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Connect with Us</h3>
+                    <p>Follow us on social media for the latest updates and fashion trends.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/andy.evha"><i class="fab fa-facebook-f" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                        <a href="https://www.tiktok.com/@9.26103?_t=8m5Zva6zBXc&_r=1"><i class="fab fa-tiktok" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                        <a href="https://www.instagram.com/evaaaaanwr?igshid=dXQwbzJxaWFxcnk4"><i class="fab fa-instagram" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Contact Us</h3>
+                    <p>Email: evaaanwarrr@gmail.com</p>
+                    <p>Phone: +62 85349905538</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <h3>Contact Us</h3>
-                <p>Email: evaaanwarrr@gmail.com</p>
-                <p>Phone: +62 85349905538</p>
-            </div>
         </div>
-    </div>
-  </footer>
+    </footer>
   
-      <!-- Bootstrap JavaScript -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-  
-  </html>
-  
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

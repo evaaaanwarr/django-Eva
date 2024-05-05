@@ -1,18 +1,207 @@
-<!-- templates/blog/category_list.html -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category List</title>
+    <title>FashionFlow</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: #fff; 
+            color: #333; 
+        }
+        /* Navigation Bar */
+        .nav.navbar {
+            background-color: #ffcccc; 
+            border-radius: 10px; 
+        }
+        nav.navbar .navbar-brand,
+        nav.navbar .navbar-nav .nav-link {
+            color: #333; 
+        }
+        .nav.navbar .navbar-toggler-icon {
+            background-color: #333; 
+        }
+        .navbar-nav .nav-link {
+            position: relative;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; /* Jarak garis bawah dari teks */
+            left: 0;
+            width: 0; /* Awalnya lebar 0 */
+            height: 2px; /* Ukuran garis bawah */
+            background-color: transparent; /* Warna awal garis bawah */
+            transition: width 0.3s ease; /* Efek transisi */
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link:focus::after,
+        .navbar-nav .nav-link:active::after {
+            width: 100%; /* Ubah lebar menjadi 100% ketika dihover/diklik */
+            background-color: #333; /* Warna garis bawah saat dihover/diklik */
+        }
+
+        /* Header */
+        header {
+            background-color: #ffc3c3; 
+            color: #333; 
+            padding: 30px 0; 
+        }
+        header h1 {
+            font-size: 3rem; /* Decrease the font size of h1 */
+            font-weight: bold;
+            color: #333; /* Dark Gray */
+        }
+        header p {
+            font-size: 1.25rem; /* Decrease the font size of paragraphs */
+            color: #555; 
+        }
+        /* Featured Trend Carousel */
+        #featured-trends {
+            background-color: #f7a1a1; 
+            color: #333; 
+            padding: 150px;
+        }
+        .carousel-caption.d-none.d-md-block {
+            /* Adjust layout and appearance properties */
+            color: #a53535; 
+        }
+
+        /* Latest Inspirations */
+        #latest-inspirations {
+            background-color: #f5f5f5; 
+            color: #333; 
+        }
+        /* Shop the Look */
+        #shop-the-look {
+            background-color: #e49090; 
+            color: #333; 
+        }
+        /* Footer */
+        #footer {
+            background-color: #E47B61; 
+            color: #fff; 
+            padding: 40px 0;
+        }
+        
+        #footer .social-icons {
+            font-size: 30px;
+        }
+        #footer .social-icons a {
+            color: #fff; 
+            margin-right: 35px;
+            transition: all 0.3s ease-in-out;
+        }
+        #footer .social-icons a:hover {
+            color: #333; 
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Category List</h1>
-    <ul>
-        {% for category in categories %}
-            <li>{{ category.category }}</li>
-        {% endfor %}
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://lh3.googleusercontent.com/-uh2F2PAWXpo/Zjc9rftsEbI/AAAAAAAAAG8/AabNGTFIycQpkk82sdD_PO-HJMUGejdWACNcBGAsYHQ/h1600/logofashionflow.png" alt="FashionFlow Logo"  style="height: 70px; width: auto;">
+            </a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" style="font-size: 16px;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/#/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/category/">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
 </body>
+
 </html>
+   <!-- Category Section -->
+<section id="category" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Explore Categories</h2>
+        <!-- Category Content -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card border-0">
+                    <img src="https://example.com/category-image-1.jpg" class="card-img-top" alt="Category 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Category 1</h5>
+                        <p class="card-text">Description of Category 1.</p>
+                        <a href="/category/category-1" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0">
+                    <img src="https://example.com/category-image-2.jpg" class="card-img-top" alt="Category 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Category 2</h5>
+                        <p class="card-text">Description of Category 2.</p>
+                        <a href="/category/category-2" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0">
+                    <img src="https://example.com/category-image-3.jpg" class="card-img-top" alt="Category 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Category 3</h5>
+                        <p class="card-text">Description of Category 3.</p>
+                        <a href="/category/category-3" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Footer -->
+ <footer class="footer bg-light text-dark text-center py-5">
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Connect with Us</h3>
+                <p>Follow us on social media for the latest updates and fashion trends.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/andy.evha"><i class="fab fa-facebook-f" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                    <a href="https://www.tiktok.com/@9.26103?_t=8m5Zva6zBXc&_r=1"><i class="fab fa-tiktok" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                    <a href="https://www.instagram.com/evaaaaanwr?igsh=dXQwbzJxaWFxcnk4"><i class="fab fa-instagram" style="width: 50px; height: 50px; size: 45px;"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <p>Email: evaaanwarrr@gmail.com</p>
+                <p>Phone: +62 85349905538</p>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+      <!-- Bootstrap JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  
+  </html>

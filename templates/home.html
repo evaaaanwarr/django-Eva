@@ -25,6 +25,26 @@
         .nav.navbar .navbar-toggler-icon {
             background-color: #333; 
         }
+        .navbar-nav .nav-link {
+            position: relative;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; /* Jarak garis bawah dari teks */
+            left: 0;
+            width: 0; /* Awalnya lebar 0 */
+            height: 2px; /* Ukuran garis bawah */
+            background-color: transparent; /* Warna awal garis bawah */
+            transition: width 0.3s ease; /* Efek transisi */
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link:focus::after,
+        .navbar-nav .nav-link:active::after {
+            width: 100%; /* Ubah lebar menjadi 100% ketika dihover/diklik */
+            background-color: #333; /* Warna garis bawah saat dihover/diklik */
+        }
+
         /* Header */
         header {
             background-color: #ffc3c3; 
@@ -32,12 +52,12 @@
             padding: 30px 0; 
         }
         header h1 {
-            font-size: 3rem; /* Mengurangi ukuran font h1 */
+            font-size: 3rem; /* Decrease the font size of h1 */
             font-weight: bold;
             color: #333; /* Dark Gray */
         }
         header p {
-            font-size: 1.25rem; /* Mengurangi ukuran font paragraf */
+            font-size: 1.25rem; /* Decrease the font size of paragraphs */
             color: #555; 
         }
         /* Featured Trend Carousel */
@@ -45,10 +65,9 @@
             background-color: #f7a1a1; 
             color: #333; 
             padding: 150px;
-          
         }
         .carousel-caption.d-none.d-md-block {
-        /* Atur properti tata letak dan tampilan */
+            /* Adjust layout and appearance properties */
             color: #a53535; 
         }
 
@@ -96,7 +115,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto" style="font-size: 16px;">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/#/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog/">Blog</a>
@@ -108,13 +127,15 @@
                         <a class="nav-link" href="/category/">Category</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
+                        <a class="nav-link" href="/contact/">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>    
+</body>
 
+</html>
     <!-- Header -->
     <header class="text-center">
         <div class="container">

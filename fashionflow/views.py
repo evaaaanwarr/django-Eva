@@ -21,9 +21,8 @@ def about(request):
     pages = Page.objects.filter(is_published=True)
     return render(request, 'about.html', {'pages': pages})
 
-def contact(request, slug):
-    post = get_object_or_404(Blog, slug=slug, status=1)
-    return render(request, 'contact.html', {'post': post})
+def contact(request):
+    return render(request, 'contact.html', {'contact': contact})
 
 def fashiontrends(request):
     return render(request, 'fashiontrends.html')
