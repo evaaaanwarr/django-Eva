@@ -33,6 +33,24 @@ def hijabstyle(request):
 def makeuptrends(request):
     return render(request, 'makeuptrends.html')
 
+def category_tops(request):
+    return render(request, 'category_tops.html')
+
+def category_bottoms(request):
+    return render(request, 'category_bottoms.html')
+
+def category_outerwear(request):
+    return render(request, 'category_outerwear.html')
+
+def category_abayas(request):
+    return render(request, 'category_abayas.html')
+
+def category_hijabs(request):
+    return render(request, 'category_hijabs.html')
+
+def category_accessories(request):
+    return render(request, 'category_accessories.html')
+
 def page_detail(request, slug):
     page = get_object_or_404(Page, slug=slug, is_published=True)
     return render(request, 'page_detail.html', {'page': page})
