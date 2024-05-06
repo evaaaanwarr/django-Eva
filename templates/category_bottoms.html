@@ -25,6 +25,25 @@
         .nav.navbar .navbar-toggler-icon {
             background-color: #333; 
         }
+        .navbar-nav .nav-link {
+            position: relative;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; /* Jarak garis bawah dari teks */
+            left: 0;
+            width: 0; /* Awalnya lebar 0 */
+            height: 2px; /* Ukuran garis bawah */
+            background-color: transparent; /* Warna awal garis bawah */
+            transition: width 0.3s ease; /* Efek transisi */
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link:focus::after,
+        .navbar-nav .nav-link:active::after {
+            width: 100%; /* Ubah lebar menjadi 100% ketika dihover/diklik */
+            background-color: #333; /* Warna garis bawah saat dihover/diklik */
+        }
         /* Header */
         header {
             background-color: #ffcccc; 
@@ -86,17 +105,12 @@
             <div class="row">
                 <div class="col-md-8 mx-auto">
                     <!-- Article Image -->
-                    <img src="https://lh3.googleusercontent.com/-jFly5Wylv7g/ZjdSbSZUM6I/AAAAAAAAAHc/-9OEyho3dOcWXSNClp-gsJe0Not1F7tqwCNcBGAsYHQ/h1600/design%2B%25286%2529.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQLolTibZPHPXZNAeU0e-lQe1P3mWVWz9l9yDImarQjHmNC-isiFRA4kl2CIlnStSmdDeDYVquyLnMiEaIcd3MKcS7HoJtSM_fSshxkm76Dbo-2BQVS1Kiiz0X-UibxwuQE-r7rZgtxQe_hyphenhyphene7RUwWd2uOvmIB1-OAAa11f3nJyhKc_shpmlqK-OwNlSE/s1200/9.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtl82HXyxY_ygiBYXW_vPO-xaXkGPi1p7hT0XY1GE06o7xWztg9wyKh_ZAGIRIvMH_VvXCoHmroBH0oK3JcfBmGCQkxlZ1EVZgVVajcGR5SGayNSMwAVIasF2Nnpv8i34srXGWVVb_IcBXZs7wQMwXgLzOODAbNi5M9o-fU1fwFX63c6m7BeYKEdMGz6A/s1200/8.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit6hAHGdPViCBQemQGjjtICYGXNkRAMY-Ntr1sbV_bDwT_Y4kiMGdJB_izlQVoXIOfM6swxmzUdTI32xGBaapeXBPzJ8sADgXcARGnpyDCAUmj2wiE7LqmuF5m1V89-9VcswW07CPPO7jWg0JTEzxHCx9GgNHU5fLmnKQFJx5GTGpAQfK2biPs8w9L-3o/s1200/10.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwn6v5muA5L4dLTBTeHCqgqrbGIOu3d_DtnoKERwPY196ahdQJBZ4goFJaQs6I8ltuNcWNUWWXbEYnYrDMPDKK61Pq1Q9Qfxv-Op3whhQKuG0uk84Xjwgy2kZVz9Epx5rkoPfWTqwxbHDCeD83hIQ0EAYKkwSVHj22cOimGwX0WPzVkVA3UGJybhkzvbw/s1200/11.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
                     <!-- Article Text -->
-                    <p>Fashion Trends for Summer merujuk pada arus tren atau kecenderungan gaya busana yang dominan selama musim panas.
-                        Ini mencakup beragam elemen seperti warna, motif, potongan pakaian, aksesori, dan bahan yang menjadi favorit atau menjadi sorotan
-                        dalam dunia mode selama musim tersebut.</p>
-                    <p>Tren musim panas meliputi penggunaan warna-warna cerah seperti kuning, oranye, atau biru laut, motif-motif tropis seperti daun kelapa, 
-                        potongan pakaian yang ringan dan longgar seperti gaun slip atau celana pendek bermotif, serta penggunaan bahan-bahan bernapas seperti katun atau linen.</p>
-                    <p>Tren fashion musim panas sering kali dipengaruhi oleh faktor-faktor seperti tren di panggung mode internasional, budaya populer, 
-                        dan kebutuhan praktis pengguna dalam menghadapi cuaca yang panas. Merek-merek dan desainer mode cenderung mengikuti dan bahkan memimpin tren ini 
-                        dengan menciptakan koleksi yang sesuai, dan konsumen biasanya terinspirasi oleh tren ini dalam memilih pakaian untuk musim panas.</p>
-                
+                    <p></p>
                         </div>
                     </div>
                 </div>

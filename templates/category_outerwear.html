@@ -25,6 +25,25 @@
         .nav.navbar .navbar-toggler-icon {
             background-color: #333; 
         }
+        .navbar-nav .nav-link {
+            position: relative;
+        }
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; /* Jarak garis bawah dari teks */
+            left: 0;
+            width: 0; /* Awalnya lebar 0 */
+            height: 2px; /* Ukuran garis bawah */
+            background-color: transparent; /* Warna awal garis bawah */
+            transition: width 0.3s ease; /* Efek transisi */
+        }
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link:focus::after,
+        .navbar-nav .nav-link:active::after {
+            width: 100%; /* Ubah lebar menjadi 100% ketika dihover/diklik */
+            background-color: #333; /* Warna garis bawah saat dihover/diklik */
+        }
         /* Header */
         header {
             background-color: #ffcccc; 
@@ -86,17 +105,12 @@
             <div class="row">
                 <div class="col-md-8 mx-auto">
                     <!-- Article Image -->
-                    <img src="https://lh3.googleusercontent.com/-jFly5Wylv7g/ZjdSbSZUM6I/AAAAAAAAAHc/-9OEyho3dOcWXSNClp-gsJe0Not1F7tqwCNcBGAsYHQ/h1600/design%2B%25286%2529.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
+                    <img src="https://lh3.googleusercontent.com/-GCFfThXOvDg/ZjjP59pJI0I/AAAAAAAAAKg/TGlg0uZBnkw3WjSsYKhoTgb4ertO9f7ggCNcBGAsYHQ/h1200/13.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
+                    <img src="https://lh3.googleusercontent.com/-UCTPjwbpcpw/ZjjP5kpUl0I/AAAAAAAAAKc/05EkxRwlwjkBbJrqVHCugGIxXkMk4qnGwCNcBGAsYHQ/h1200/16.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
+                    <img src="https://lh3.googleusercontent.com/-UVhCjNPh7Zw/ZjjP56fl02I/AAAAAAAAAKk/nUgZa8ll4Ak91nHTxGDpcAnByZG1sjGuQCNcBGAsYHQ/h1200/17.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn_9DIXi23-xdDbAOv8If2unZWLmwjE0pmLyPW-JrLfHxeKESgj08f5QiGL23RJuVQWJ8Y1KP4Zuj1066pOgZ_H2AKXA2KN3d3jumCDiUi1JWC5KEzuogQonui_x2j3XyyOjmQyVyc80ULyd-qM7BduBhDuuJ3ZGYchUT7XEAae7Y3JeFoF_DgD1MDS1A/s1200/13.png" class="img-fluid mb-4" alt="Fashion Trends for Summer">
                     <!-- Article Text -->
-                    <p>Fashion Trends for Summer merujuk pada arus tren atau kecenderungan gaya busana yang dominan selama musim panas.
-                        Ini mencakup beragam elemen seperti warna, motif, potongan pakaian, aksesori, dan bahan yang menjadi favorit atau menjadi sorotan
-                        dalam dunia mode selama musim tersebut.</p>
-                    <p>Tren musim panas meliputi penggunaan warna-warna cerah seperti kuning, oranye, atau biru laut, motif-motif tropis seperti daun kelapa, 
-                        potongan pakaian yang ringan dan longgar seperti gaun slip atau celana pendek bermotif, serta penggunaan bahan-bahan bernapas seperti katun atau linen.</p>
-                    <p>Tren fashion musim panas sering kali dipengaruhi oleh faktor-faktor seperti tren di panggung mode internasional, budaya populer, 
-                        dan kebutuhan praktis pengguna dalam menghadapi cuaca yang panas. Merek-merek dan desainer mode cenderung mengikuti dan bahkan memimpin tren ini 
-                        dengan menciptakan koleksi yang sesuai, dan konsumen biasanya terinspirasi oleh tren ini dalam memilih pakaian untuk musim panas.</p>
-                
+                    <p></p>
                         </div>
                     </div>
                 </div>
