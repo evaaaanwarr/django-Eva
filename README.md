@@ -50,3 +50,6 @@
 
 ## Gambar Contact
 ![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Contact.png)
+
+## Admin 
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/admin.png)
