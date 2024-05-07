@@ -21,11 +21,32 @@
 ## Gambar Blog
 ![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Blog.png)
 
-## gambar isi Blog
+## Gambar isi Blog
 ![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Blog_.png)
 
-### Gambar Blog Fashion
+### Gambar Blog Fashion, Hijabs, dan Makeup
 ![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Blog_Fashion.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Blog_Hijab.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Blog_Makeup.png)
 
+## Gambar About
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/About.png)
 
+## Gambar AboutOurTeam
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/About_OurTeam.png)
 
+## Gambar Category 
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category1.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category2.png)
+
+### Gambar Category Tops,Bottoms,Outerwear,Abayas,Hijabs,Accessories
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category_Tops.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category_Bottoms.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category_Outerwear.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category_Abayas.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category_Hijabs.png)
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Category_Accessories.png)
+
+## Gambar Contact
+![Gambar](https://github.com/evaaaanwarr/django-Eva/blob/main/ss%20web%20blog/Contact.png)
